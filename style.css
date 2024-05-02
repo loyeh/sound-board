@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #376daa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btn{
+    padding: 10px;
+    white-space: nowrap;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+    background-color: #131a58;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #1c2786;
+    color: white;
+}

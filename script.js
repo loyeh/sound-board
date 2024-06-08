@@ -5,8 +5,6 @@ const main = document.querySelector(".main");
 audios = Array.from(audios);
 buttons = Array.from(buttons);
 
-console.log(audios);
-
 buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
     audios.forEach((audio) => {
@@ -18,10 +16,10 @@ buttons.forEach((button, index) => {
 });
 
 window.addEventListener("click", (e) => {
-  if(e.target.classList[0]=='main'){
+  if (e.target.classList[0] == "main") {
     audios.forEach((audio) => {
-        audio.pause();
-        audio.currentTime = 0;
-      });
+      audio.pause();
+      audio.currentTime = 0;
+    });
   }
 });
